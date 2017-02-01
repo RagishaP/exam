@@ -24,12 +24,7 @@ class Welcome extends CI_Controller {
 		$view['data']=$this->InsertModel->select();
 		$this->load->view('addemployee.php',$view);
 	}
-	// public function edit()
-	// {
-	// 	$this->load->model('InsertModel');
-	// 	$view['data']=$this->InsertModel->select();
-	// 	$this->load->view('',$view);
-	// }
+	
 	 public function edit()
     {
     	$this->load->model('InsertModel');

@@ -39,8 +39,6 @@ function delete()
 function update()
 {
 	$id=$this->input->get_post('id');
-	
-
 	$this->load->model('InsertModel');
 		$this->InsertModel->update($id);
 }

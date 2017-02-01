@@ -47,8 +47,9 @@ function update($id)
 	$na=$this->input->get_post('name');
 	$po=$this->input->get_post('phone');
 	$em=$this->input->get_post('email');
+	$data=array('name'=>$na,'email'=>$em,'phone'=>$po)
 	$this->db->where('id', $id);
-        $this->db->update('employee',$data);
+        $this->db->update('employee');
 }
 
 }
